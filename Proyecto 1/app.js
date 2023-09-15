@@ -1,5 +1,6 @@
-const boton = document.querySelector('button');
+const boton = document.getElementById('boton-color');
 const color = document.getElementById('color');
+const navbar = document.getElementById('offcanvasNavbar')
 
 const generarColorHexAleatorio = () => {
     let digitos = '0123456789ABCDEF';
@@ -17,4 +18,5 @@ boton.addEventListener('click', () => {
     let colorAleatorio = generarColorHexAleatorio();
     color.textContent = colorAleatorio;
     document.body.style.backgroundColor = colorAleatorio;
+    navbar.style.backgroundColor = colorAleatorio
 })

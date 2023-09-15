@@ -1,13 +1,39 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    box-sizing: border-box;
 }
 
 body {
     height: 100vh;
-    background: #2B807B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
     text-align: center;
+    overflow: hidden;
+}
+
+.navbar {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 1rem;
+}
+
+#offcanvasNavbar {
+    background-color: #fff;
+}
+
+#offcanvasNavbarLabel {
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.offcanvas-body ul li a {
+    color: #2d2d2d;
+    font-weight: bold;
 }
 
 .centrar-flex {
@@ -21,8 +47,11 @@ body {
     width: 450px;
     background-color: white;
     border: 5px solid black;
-    flex-wrap: wrap;
     flex-direction: column;
+}
+
+#contenedor p{
+    margin-bottom: 0;
 }
 
 #color {
@@ -30,7 +59,7 @@ body {
     font-weight: bold;
 }
 
-button {
+#boton-color {
     font-size: 30px;
     color: white;
     border-radius: 20px;
@@ -43,6 +72,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#boton-color:hover {
     background-color: #05455A;
 }
